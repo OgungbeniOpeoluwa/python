@@ -1,11 +1,11 @@
 import random
 
-sum = int(input("Enter a number within 0 and 6"))
+user_input = int(input("Enter a number within 0 and 6"))
 number = random.random()
 print(number)
 
-_ = random.randint(1, sum)
-print(_)
+guess = random.randint(1, user_input)
+print(guess)
 
 count = 0
 counter = 0
