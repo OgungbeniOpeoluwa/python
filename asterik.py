@@ -1,0 +1,3 @@
+def numbers():
+    print("* * * * *")
+    print("*       *")

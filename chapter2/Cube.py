@@ -14,7 +14,7 @@ cube3 = numb3 * 3
 cube4 = numb4 * 4
 cube5 = numb5 * 5
 
-print(f"{0:> 4} { num:> 4} {cube:> 4}")
+print(f"{0: > 4} { num:> 4} {cube:> 4}")
 print(f"{1:> 4} {num1:> 4} {cube1:> 4}")
 print(f"{2:> 4} {numb2:> 4} {cube2:> 4}")
 print(f"{3:> 4} {numb3:> 4} {cube3:> 4}")
