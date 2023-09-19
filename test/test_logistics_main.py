@@ -5,7 +5,7 @@ from java_python.logistics_main import rider_calculator
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_delivery_lesser_than_50(self):
         payment = rider_calculator(25)
         self.assertEqual(payment, 9000)  # add assertion here
 
