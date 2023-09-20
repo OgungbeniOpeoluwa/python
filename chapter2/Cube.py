@@ -1,5 +1,3 @@
-
-
 num = 0 * 0
 num1 = 1 * 1
 numb2 = 2 * 2
@@ -22,3 +20,4 @@ print(f"{4:> 4} {numb4:> 4} {cube4:> 4}")
 print(f"{5:> 4} {numb5:> 4} {cube5:> 4}")
 
 
+# you can use one print statement for this
