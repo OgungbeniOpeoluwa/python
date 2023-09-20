@@ -4,3 +4,5 @@ if num % 2 == 0:
 
 else:
     print(num, "is a odd number")
+
+# stop naming my files like java files
