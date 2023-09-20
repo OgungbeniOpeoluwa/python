@@ -39,3 +39,5 @@ class Testaccount_main(TestCase):
         self.assertEqual(8000, account_one.get_balance())
         account_one.transfer(5000, account_two)
        # self.assertEqual(3000, account_one.get_balance())
+
+# you even add java work to your python repo lol
