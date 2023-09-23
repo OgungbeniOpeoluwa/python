@@ -10,3 +10,5 @@ for count in number:
 print(f"""number of even number : {even}
 number of odd number: {odd}
 """)
+
+# you cant name your file range in python, there's a python interpreter file with that name already

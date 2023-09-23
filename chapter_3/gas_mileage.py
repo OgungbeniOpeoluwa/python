@@ -14,3 +14,6 @@ while counter != -1:
 
 combined_miles_gallon = "{:.6f}".format(miles_count / gallon_count)
 print(f"The combined miles per gallon obtained from the tankful is {combined_miles_gallon}")
+
+# .format is an old way of formating a string in python, from python 3.6 f string was introduced, string is cleaner and easier
+# you can leave this, so u know how to use .format method as well.
