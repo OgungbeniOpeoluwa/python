@@ -14,7 +14,6 @@ class Account_main:
         if self._balance > amount:
             self._balance -= amount
 
-    def transfer(self, amount):
+    def transfer(self, amount, name):
         self.withdraw(amount)
-        name.self.deposit(amount)
-
+        name.deposit(amount)

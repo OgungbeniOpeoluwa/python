@@ -6,9 +6,9 @@ product = smallest
 count = 1
 for number in range(3):
     user_input = int(input("Enter a number: "))
-    if user_input > smallest:
+    if user_input > largest:
         largest = user_input
-    else:
+    if user_input < smallest:
         smallest = user_input
     total += user_input
     product *= user_input

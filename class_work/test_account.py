@@ -38,4 +38,5 @@ class Testaccount_main(TestCase):
         account_one.deposit(8000)
         self.assertEqual(8000, account_one.get_balance())
         account_one.transfer(5000, account_two)
-       # self.assertEqual(3000, account_one.get_balance())
+        self.assertEqual(3000, account_one.get_balance())
+        self.assertEqual(5000,account_two.get_balance())
