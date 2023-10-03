@@ -1,5 +1,5 @@
 def main_menu():
-    user_input = int(input("""press
+    print("""press
               1. phoneBook
               2. messages
               3. chat
@@ -14,7 +14,8 @@ def main_menu():
               12. profiles
               13. simServices
               14. exit
-              """))
+              """)
+    user_input = int(input("Enter Respnse: "))
     if user_input == 1:
         return phonebook()
     elif user_input == 2:
