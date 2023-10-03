@@ -37,8 +37,8 @@ class Test(TestCase):
         self.assertEqual(["a", "b", "c", "d", 1, 2, 3, 4], result)
 
     def test_cocatinating_in_between(self):
-        result = funtion_list.cocatinating_in_between(["a", "b", "c", "d"], [1, 2, 3, 4, ])
-        self.assertEqual(["a", 1, "b", 2, "c", 3, "d", 4], result)
+        result = funtion_list.cocatinating_in_between(["a", "b", "c", "d"], [1, 2, 3, 4, 5, 7])
+        self.assertEqual(["a", 1, "b", 2, "c", 3, "d", 4, 5, 7], result)
 
     def test_number_to_list(self):
         result = funtion_list.digit_to_list(2, 3, 4, 5, 6, 8, 9)

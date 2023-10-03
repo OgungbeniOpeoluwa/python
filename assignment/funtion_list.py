@@ -59,14 +59,19 @@ def cocatinating_two_list(numbers, number):
 
 
 def cocatinating_in_between(numbers, number):
-    counter = 0
     control = 0
     result = []
+    count = len(number)
     for count in range(len(numbers)):
         result.append(numbers[count])
-        counter += 1
         result.append(number[control])
         control += 1
+        count -= 1
+    while count != 0:
+        result.append(number[control])
+        control += 1
+        count -=1
+
     return result
 
 
