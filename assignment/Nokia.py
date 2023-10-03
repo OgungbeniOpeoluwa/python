@@ -1,5 +1,5 @@
 def main_menu():
-    user_input = int(input("""press:
+    user_input = int(input("""press
               1. phoneBook
               2. messages
               3. chat
@@ -22,7 +22,7 @@ def main_menu():
     elif user_input == 3:
         return chat()
     elif user_input == 4:
-        return callRegister()
+        return call_register()
     elif user_input == 5:
         return tones()
     elif user_input == 6:
@@ -31,6 +31,16 @@ def main_menu():
         return call_divert()
     elif user_input == 8:
         return games()
+    elif user_input == 9:
+        return calculator()
+    elif user_input == 10:
+        return reminders()
+    elif user_input == 11:
+        return clock()
+    elif user_input == 12:
+        return profiles()
+    elif user_input == 13:
+        return sim_services()
 
 
 def phonebook():
@@ -117,12 +127,12 @@ def messages():
     elif message == 6:
         return "Smiley"
     elif message == 7:
-        settings = input("""
+        message_setting = input("""
             1. Set1
             2. common
             3.Go back
             4.main menu""")
-        if settings == 1:
+        if message_setting == 1:
             setting = input("""
                          1. Message center Number
                          2.Message sent as
@@ -139,7 +149,7 @@ def messages():
                 return messages()
             else:
                 return main_menu()
-        elif settings == 2:
+        elif message_setting == 2:
             common = input("""
                           1.Delivery Report
                           2.Reply Via Same Center
@@ -156,7 +166,7 @@ def messages():
                 return messages()
             else:
                 return main_menu()
-        elif settings == 3:
+        elif message_setting == 3:
             return messages()
         else:
             return main_menu()
@@ -180,7 +190,7 @@ def chat():
         return main_menu()
 
 
-def callRegister():
+def call_register():
     call = input("""
                     press
                     1. Missed call
@@ -221,7 +231,7 @@ def callRegister():
         elif duration == 5:
             return "Clear Timers"
         elif duration == 6:
-            return callRegister()
+            return call_register()
         else:
             return main_menu()
     elif call == 6:
@@ -238,7 +248,7 @@ def callRegister():
         elif call_cost == 3:
             return "Clear Counters"
         elif call_cost == 4:
-            return callRegister()
+            return call_register()
         else:
             return main_menu()
     elif call == 7:
@@ -252,7 +262,7 @@ def callRegister():
         elif show_call == 2:
             return "Show Cost In"
         elif show_call == 3:
-            return callRegister()
+            return call_register()
         else:
             return main_menu()
     elif call == 8:
@@ -412,5 +422,75 @@ def games():
     game = int(input("Enter response: "))
     if game == 1:
         return game
+    else:
+        return main_menu()
+
+
+def calculator():
+    print("""
+        1. Calculator
+        2. Main Menu""")
+    calculators = int(input("Enter your Response: "))
+    if calculators == 1:
+        return "Calculator"
+    else:
+        return main_menu()
+
+
+def reminders():
+    print("""
+     1. Reminders
+     2. Main Menu""")
+    reminder = int(input("Enter your Response: "))
+    if reminder == 1:
+        return "Reminders"
+    else:
+        return main_menu()
+
+
+def clock():
+    print("""
+                1. Alarm Clock
+                2. Clock Settings
+                3. Date Setting
+                4. Stop Watch
+                5. CountDown timer
+                6. Auto Update Of Date And Time
+                7. Main Menu""");
+    clock_setting = int(input("Enter your Response: "))
+    if clock_setting == 1:
+        return "Alarm Clock"
+    elif clock_setting == 2:
+        return "Clock Setting"
+    elif clock_setting == 3:
+        return "Date Setting"
+    elif clock_setting == 4:
+        return "Stop Watch"
+    elif clock_setting == 5:
+        return "CountDown timer"
+    elif clock_setting == 7:
+        return "Auto Update Of Date And Time"
+    else:
+        return main_menu()
+
+
+def profiles():
+    print("""
+                1. Profiles
+                2. Main Menu""");
+    profile = int(input("Enter your response: "))
+    if profile == 1:
+        return "Profiles"
+    else:
+        return main_menu()
+
+
+def sim_services():
+    print("""
+                1. Sim Services
+                2. Main Menu""");
+    service = int(input('Enter your Response: '))
+    if service == 1:
+        return "SIM Service"
     else:
         return main_menu()
