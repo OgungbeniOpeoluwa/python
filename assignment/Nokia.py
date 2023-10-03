@@ -17,44 +17,20 @@ def main_menu():
               """))
     if user_input == 1:
         return phonebook()
-
-
-# case 2:
-#     print("message")
-#     nokia_function.messages()
-# case 3:
-#     print("Chat")
-#     nokia_function.chat()
-# case 4:
-#     print("Call Register")
-#     nokia_function.callRegister()
-# case 5:
-#     print("Tones")
-#     nokia_function.tones()
-# case 6:
-#     print("Setting")
-#     nokia_function.settings()
-# case 7:
-#     print("Call Divert")
-#     nokia_function.callDivert()
-# case 8:
-#     print("Games")
-#     nokia_function.games()
-# case 9:
-#     print("Calculator")
-#     nokia_function.calculator()
-# case 10:
-#     print("Reminders")
-#     nokia_function.reminders()
-# case 11:
-#     print("Clock")
-#     nokia_function.clock()
-# case 12:
-#     print("Profiles")
-#     nokia_function.profiles()
-# case 13:
-#     print("SIM Services")
-#     nokia_function.simServices()
+    elif user_input == 2:
+        return messages()
+    elif user_input == 3:
+        return chat()
+    elif user_input == 4:
+        return callRegister()
+    elif user_input == 5:
+        return tones()
+    elif user_input == 6:
+        return settings()
+    elif user_input == 7:
+        return call_divert()
+    elif user_input == 8:
+        return games()
 
 
 def phonebook():
@@ -321,17 +297,18 @@ def tones():
     else:
         return main_menu()
 
+
 def settings():
-        print("""
+    print("""
                 1. Call Setting
                 2. Phone Setting
                 3. Security Setting
                 4. Restore Factory Settings
                 5. Main Menu
                 """);
-        setting = int(input("Enter your response: "))
-        if setting == 1:
-            print("""
+    setting = int(input("Enter your response: "))
+    if setting == 1:
+        print("""
             1. Automatic Redial
             2. Speed Dialing
             3. Call Waiting Option
@@ -340,25 +317,25 @@ def settings():
              6. Automatic Answer
              7. Go Back
              8. Main Menu""");
-            user = int(input("Enter your response: "))
-            if user == 1:
-                return "Automatic Redial"
-            elif user == 2:
-                return "Speed Dialing"
-            elif user == 3:
-                return "Call Waiting Option"
-            elif user == 4:
-                return "Own Number Sending"
-            elif user == 5:
-                return "Phone line in use"
-            elif user == 6:
-                return "Automatic Answer"
-            elif user == 7:
-                return settings()
-            else:
-                return main_menu()
-        elif setting == 2:
-            print("""
+        user = int(input("Enter your response: "))
+        if user == 1:
+            return "Automatic Redial"
+        elif user == 2:
+            return "Speed Dialing"
+        elif user == 3:
+            return "Call Waiting Option"
+        elif user == 4:
+            return "Own Number Sending"
+        elif user == 5:
+            return "Phone line in use"
+        elif user == 6:
+            return "Automatic Answer"
+        elif user == 7:
+            return settings()
+        else:
+            return main_menu()
+    elif setting == 2:
+        print("""
             1.Language
             2. Cell Waiting Options
             3. Welcome Note
@@ -367,25 +344,25 @@ def settings():
             6. Confirm Sim Service Action
             7. Go Back
             8. Main Menu""");
-            phone_settings = int(input("Enter your response: "))
-            if phone_settings == 1:
-                return "Language"
-            elif phone_settings == 2:
-                return " Cell Waiting Options"
-            elif phone_settings == 3:
-                return " Welcome Note"
-            elif phone_settings == 4:
-                return "Network Selection"
-            elif phone_settings == 5:
-                return "Lights"
-            elif phone_settings == 6:
-                return "Confirm Sim Service Action"
-            elif phone_settings == 7:
-                return settings()
-            else:
-                return main_menu()
-        elif setting == 3:
-            print("""
+        phone_settings = int(input("Enter your response: "))
+        if phone_settings == 1:
+            return "Language"
+        elif phone_settings == 2:
+            return " Cell Waiting Options"
+        elif phone_settings == 3:
+            return " Welcome Note"
+        elif phone_settings == 4:
+            return "Network Selection"
+        elif phone_settings == 5:
+            return "Lights"
+        elif phone_settings == 6:
+            return "Confirm Sim Service Action"
+        elif phone_settings == 7:
+            return settings()
+        else:
+            return main_menu()
+    elif setting == 3:
+        print("""
              1. Pin Code Request
              2. Call Barring Service
              3. Fixed Dialling
@@ -394,26 +371,46 @@ def settings():
              6. Change Access Code
              7. Go back
              8. Main Menu""")
-            security_setting = int(input("enter response: "))
-            if security_setting == 1:
-                return "Pin Code Request"
-            elif security_setting == 2:
-                return "Call Barring Service"
-            elif security_setting == 3:
-                return "Fixed Dialling"
-            elif security_setting == 4:
-                return "Closed User Group"
-            elif security_setting == 5:
-                return " Phone Security"
-            elif security_setting == 6:
-                return "Change Access Code"
-            elif security_setting == 7:
-                return settings()
-            else:
-                return main_menu()
-        elif setting == 4:
-            return "Restore Factory"
+        security_setting = int(input("enter response: "))
+        if security_setting == 1:
+            return "Pin Code Request"
+        elif security_setting == 2:
+            return "Call Barring Service"
+        elif security_setting == 3:
+            return "Fixed Dialling"
+        elif security_setting == 4:
+            return "Closed User Group"
+        elif security_setting == 5:
+            return " Phone Security"
+        elif security_setting == 6:
+            return "Change Access Code"
+        elif security_setting == 7:
+            return settings()
         else:
             return main_menu()
+    elif setting == 4:
+        return "Restore Factory"
+    else:
+        return main_menu()
 
 
+def call_divert():
+    print("""
+         1. Call Divert
+         2. Main Menu""")
+    divert = int(input("Enter response:"))
+    if divert == 1:
+        return "Call Divert"
+    else:
+        return main_menu()
+
+
+def games():
+    print("""
+                1. Games
+                2. Main Menu""");
+    game = int(input("Enter response: "))
+    if game == 1:
+        return game
+    else:
+        return main_menu()
