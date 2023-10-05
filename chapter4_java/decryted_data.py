@@ -16,23 +16,27 @@ def decrypted_data(user_input: int):
     total_four = 0
     if number_one < 0:
         total = first_digit
+        total  -= first_digit
     else:
         total = first_digit + 10
         total -= constant
     if number_two < 0:
         total_two = second_digit
+        total_two-=second_digit
     else:
         total_two = second_digit + 10
         total_two -= second_digit
 
     if number_three < 0:
         total_three = third_digit
+        total_three -= third_digit
     else:
         total_three = third_digit + 10
         total_three -= constant
 
     if number_four < 0:
         total_four = fourth_digit
+        total_four -= fourth_digit
     else:
         total_four = fourth_digit + 10
         total_four -= constant

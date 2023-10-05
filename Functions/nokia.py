@@ -1,16 +1,18 @@
 def phone_book():
-    user_input = ("""press
-    1. search
-    2.service
-    3 add name
-    4.erase
-    5.edit
-    6.Assign tone
-    7. send b'card
-    8.option(input)
-    9.speed dials
-    10.voice tag
-    """)
+    print("""press
+        1. search
+        2.service
+        3 add name
+        4.erase
+        5.edit
+        6.Assign tone
+        7. send b'card
+        8.option(input)
+        9.speed dials
+        10.voice tag
+        """)
+
+    user_input = int(input("Enter someone "))
     if user_input == 1:
         print("search")
     if user_input == 2:
@@ -34,7 +36,6 @@ def phone_book():
             print('Type of view')
         if user_input2 == 2:
             print('Memory Status')
-    return user_input
 
 
-print(phone_book())
+phone_book()
