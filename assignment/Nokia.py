@@ -1,3 +1,7 @@
+
+from assignment import nokia_inner_function
+
+
 def main_menu():
     print("""press
               1. phoneBook
@@ -433,7 +437,29 @@ def calculator():
         2. Main Menu""")
     calculators = int(input("Enter your Response: "))
     if calculators == 1:
-        return "Calculator"
+        print("""
+        1. addition
+        2. multiplication
+        3. square root
+        4. subtraction
+        5. square""")
+        user_inputs = int(input("Enter your response: "))
+        if user_inputs == 1:
+            user_inputsss = int(input("Enter numbers to add: "))
+            total = nokia_inner_function.addition(user_inputsss)
+            return total
+        elif user_inputs == 2:
+            user_input = int(input("Enter the numbers you will like to multiply: "))
+            total = nokia_inner_function.multiplication(user_input)
+            return total
+        elif user_inputs == 3:
+            user_input = int(input("Enter a number: "))
+            total = nokia_inner_function.square_root(user_input)
+            return total
+        elif user_inputs == 4:
+            user_ = int(input("Enter number: "))
+            total = nokia_inner_function.subtraction(user_)
+            return total
     else:
         return main_menu()
 

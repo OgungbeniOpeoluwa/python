@@ -14,4 +14,3 @@ def square_root2(number):
         return f'{total2:.4}'
 
 
-print(square_root2(169))
