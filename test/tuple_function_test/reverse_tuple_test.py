@@ -7,8 +7,8 @@ from assignment import reverse_tuple
 
 class MyTestCase(TestCase):
     def test_reverse_tuple(self):
-        result = (10, 20, 30, 40, 50)
-        expected = (50, 40, 30, 20, 10)
+        result = (10, 20, 30, 40, 50,75)
+        expected = (75,50, 40, 30, 20, 10)
         self.assertEqual(expected, reverse_tuple.reverse_tuple1(result))
 
     def test_nested_tuple(self):

@@ -1,15 +1,13 @@
 def reverse_tuple1(number: tuple):
+    lists = list(number)
     result = len(number) - 1
-    count = 1
-    sought = (number[result],)
-    for numb in range(result - 1, 0, ):
-        sought[count] += number[numb]
+    lists[result] = number[0]
+    count = 0
+    for numb in range(result, 0, -1):
+        lists[count] = number[numb]
         count += 1
 
-    return sought
-
-
-print(reverse_tuple1((10, 20, 30, 40, 50)))
+    return tuple(lists)
 
 
 def nested_tuple(number: tuple, numbers: int, numb: int):
