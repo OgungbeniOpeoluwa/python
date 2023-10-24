@@ -1,3 +1,6 @@
+import personaity_result
+
+
 def question():
     response1 = []
     response2 = []
@@ -100,8 +103,7 @@ def question():
         result2 = 0
         counts += 1
         print()
-    print(count)
-
+    return personaity_result.personality_result(count)
 
 
 question()
