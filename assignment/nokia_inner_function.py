@@ -31,19 +31,7 @@ def square_root(number):
     return total2
 
 
-def subtraction(number):
-    result = len(number)
-    total = 1
-    for count in range(result):
-        total *= 10
-    first_digit = number // total
-    total = first_digit
-    product = total // 10
-    while total != 0:
-        count = number // product % 10
-        total -= count
-        total //= 10
-    return total
-
-
-print(subtraction(544))
+def square(number):
+    for count in range(number):
+        if count * count == number:
+            return count

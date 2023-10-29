@@ -1,4 +1,3 @@
-
 from assignment import nokia_inner_function
 
 
@@ -64,14 +63,35 @@ def phonebook():
                 11.Main Menu
                 """)
     inputsr = int(input("Enter response: "))
+    dictionary = {}
     if inputsr == 1:
-        return "search"
+        inputs = input("Enter name :")
+        return dictionary.get(inputs)
     elif inputsr == 2:
         return "service nos"
     elif inputsr == 3:
-        return "add name"
+        inputs = input("Enter your name : ")
+        inputer = int(input("Enter your number: "))
+        dictionary[inputs] = inputer
+        print("name saved")
+        users = input("will you like to add another contact,Enter yes or no:  ")
+        while users == "yes":
+            inputs = input("Enter your name : ")
+            inputer = int(input("Enter your number: "))
+            dictionary[inputs] = inputer
+            print("name saved")
+            users = input("will you like to add another contact,Enter yes or no:  ")
+        userss = input("press 1 to get add contact :")
+        if userss == 1:
+            dictionary.get()
+        user = int(input("Press 1 to go back to phonebook menu or press 0 to exit: "))
+        if user == 1:
+            phonebook()
+
+        # else:
+        #     return
     elif inputsr == 4:
-        return "edit"
+        return "erase"
     elif inputsr == 5:
         return "Edit"
     elif inputsr == 6:
@@ -441,8 +461,8 @@ def calculator():
         1. addition
         2. multiplication
         3. square root
-        4. subtraction
-        5. square""")
+        4. square
+        5. Go back to calculator menu""")
         user_inputs = int(input("Enter your response: "))
         if user_inputs == 1:
             user_inputsss = int(input("Enter numbers to add: "))
@@ -457,9 +477,12 @@ def calculator():
             total = nokia_inner_function.square_root(user_input)
             return total
         elif user_inputs == 4:
-            user_ = int(input("Enter number: "))
-            total = nokia_inner_function.subtraction(user_)
+            user_input = int(input("Enter a number: "))
+            total = nokia_inner_function.square(user_input)
             return total
+        else:
+            calculator()
+
     else:
         return main_menu()
 
