@@ -63,35 +63,14 @@ def phonebook():
                 11.Main Menu
                 """)
     inputsr = int(input("Enter response: "))
-    dictionary = {}
     if inputsr == 1:
-        inputs = input("Enter name :")
-        return dictionary.get(inputs)
+        return "search"
     elif inputsr == 2:
         return "service nos"
     elif inputsr == 3:
-        inputs = input("Enter your name : ")
-        inputer = int(input("Enter your number: "))
-        dictionary[inputs] = inputer
-        print("name saved")
-        users = input("will you like to add another contact,Enter yes or no:  ")
-        while users == "yes":
-            inputs = input("Enter your name : ")
-            inputer = int(input("Enter your number: "))
-            dictionary[inputs] = inputer
-            print("name saved")
-            users = input("will you like to add another contact,Enter yes or no:  ")
-        userss = input("press 1 to get add contact :")
-        if userss == 1:
-            dictionary.get()
-        user = int(input("Press 1 to go back to phonebook menu or press 0 to exit: "))
-        if user == 1:
-            phonebook()
-
-        # else:
-        #     return
+        return "edit"
     elif inputsr == 4:
-        return "erase"
+        return "Add Name"
     elif inputsr == 5:
         return "Edit"
     elif inputsr == 6:
