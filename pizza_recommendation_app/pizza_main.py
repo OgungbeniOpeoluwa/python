@@ -3,7 +3,7 @@ def pizza_recommendation_app(result, hungry=0, super_hungry=0, classic=0):
     first_result = 0
     second_result = 0
     third_result = 0
-    if hungry > 0  and super_hungry > 0 and classic > 0:
+    if hungry > 0 and super_hungry > 0 and classic > 0:
         first_result = get_size_of_stomach("hungry") * hungry
         second_result = get_size_of_stomach("super_hungry") * super_hungry
         third_result = get_size_of_stomach("classic") * classic
