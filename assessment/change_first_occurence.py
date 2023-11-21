@@ -1,3 +1,6 @@
+from assignment.geographical_zone import Geographical_zone
+
+
 def change_first_occurrence_function(result: str, letter, replaces):
     results = result.count(letter)
     number = result.index(letter)
@@ -7,3 +10,5 @@ def change_first_occurrence_function(result: str, letter, replaces):
             if letter == count:
                 result = result.replace(count, replaces)
     return first_word + result[number + 1:]
+
+
