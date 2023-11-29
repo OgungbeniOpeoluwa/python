@@ -1,6 +1,6 @@
 import unittest
 
-from assessment.chapter5 import Teephone_word_generator
+from chapter5 import Teephone_word_generator
 
 
 class MyTestCase(unittest.TestCase):

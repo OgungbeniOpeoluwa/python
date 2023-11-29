@@ -1,6 +1,6 @@
 import unittest
 
-from chapter5 import extreme
+from chapter5_java import extreme
 
 
 class MyTestCase(unittest.TestCase):
