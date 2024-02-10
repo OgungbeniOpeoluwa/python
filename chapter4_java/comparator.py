@@ -12,3 +12,5 @@ def comparator_function(first_number, second_number):
 first_input = int(input("Enter first integer : "))
 second_input = int(input("Enter second integer : "))
 print(comparator_function(first_input, second_input))
+
+
